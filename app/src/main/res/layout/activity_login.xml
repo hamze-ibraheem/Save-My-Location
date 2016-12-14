@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="283dp"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:ems="10"
+        android:id="@+id/username"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.32999998"
+        android:layout_height="56dp" />
+
+    <EditText
+        android:layout_width="283dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="@string/password"
+
+        app:layout_constraintTop_toBottomOf="@+id/username"
+
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:text="@string/sign_in"
+        android:layout_width="123dp"
+        android:layout_height="57dp"
+        android:id="@+id/btnLogin"
+
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.2" />
+
+
+
+</android.support.constraint.ConstraintLayout>
